@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gauravi Bagul | Portfolio</title>
+     <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <style>
+        body{
+            background:#0c0f1a;
+            color:#fff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+         .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+        .text-orange{color:#ff6a3d;}
+        .bg-orange{background:#ff6a3d;}
+        .btn-orange{
+            background:#ff6a3d;
+            color:#fff;
+            border-radius:30px;
+            padding:10px 25px;
+        }
+        .btn-orange:hover{background:#ff814f;}
+        .section-padding{padding:80px 0;}
+        .card-dark {
+    background: #141826;
+    border: 1px solid #1e2336;
+    border-radius: 15px;
+    transition: all 0.35s ease;
+    transform: translateY(0);
+}
+
+/* Hover Animation */
+.card-dark:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border-color: #ff6a3d;
+}
+
+        .progress{
+            height:8px;
+            background:#1c2133;
+        }
+        .progress-bar{background:#ff6a3d;
+            width: 90%;
+        }
+        .service-img{
+            border-radius:12px;
+            height:200px;
+            object-fit:cover;
+        }
+        .timeline {
+  border-left: 3px solid #ff6a3d;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #ff6a3d;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+        footer{
+            background:#0a0d16;
+            border-top:1px solid #1d2235;
+        }
+        .nav-item.active .nav-link {
+    color: #ff6b00 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6b00;
+}
+
+    </style>
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="./"><span class="text-orange">GB</span> Portfolio</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#qualification">Qualification</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <!-- <li class="nav-item ms-lg-3"><a class="btn btn-orange">Download Resume</a></li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="overlay"></div>
+  <div class="container position-relative">
+    <h1 class="display-4 fw-bold animate__animated animate__bounceIn" >Hi, I'm Gauravi 👋</h1>
+    <p class="lead animate__animated animate__fadeInUp">Web Designer | Frontend Developer</p>
+     <a class="btn btn-orange me-2 mt-3  animate__animated animate__fadeInUp" href="#project">View Project</a>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section-padding" id="about-me">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 text-center animate__animated animate__fadeInUp">
+                <img src="profile.png" class="img-fluid rounded-circle border border-3 border-orange" alt="Profile">
+            </div>
+            <div class="col-lg-7">
+                <span class="badge bg-orange mb-2">About Me</span>
+                <h2 class="fw-bold animate__animated animate__fadeInUp">Design. Create. Inspire.!!</h2>
+                <p class="mt-2 animate__animated animate__fadeInUp">I’m a creative and detail-oriented Web Designer with 1 year 8 months of professional experience in designing modern, user-friendly, and responsive websites. I specialize in turning ideas into visually appealing digital experiences that are both functional and engaging.</p>
+                <p class="mt-2 animate__animated animate__fadeInUp">I enjoy working on clean UI, smooth user experience, and designs that help brands grow online. I’m always learning new design trends and tools to improve my work and deliver better results.</p>
+
+                <!-- <div class="row mt-4">
+                    <div class="col-md-6">
+                        <p><strong>Name:</strong> Saira Karim</p>
+                        <p><strong>Email:</strong> example@domain.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Phone:</strong> +123 567 8910</p>
+                        <p><strong>Twitter:</strong> sairakarim011</p>
+                    </div>
+                </div> -->
+
+                <a class="btn btn-orange me-2 mt-3 animate__animated animate__fadeInUp" href="#contact">Contact Me</a>
+                <!-- <a class="btn btn-outline-light mt-3">Download Resume</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section-padding">
+    <div class="container text-center">
+        <h2 class="fw-bold animate__animated animate__fadeInUp">My <span class="text-orange">Skills</span></h2>
+        <div class="row g-4 mt-4 justify-content-center">
+            <!-- Skill -->
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">UI/UX Design</h6>
+                    <div class="progress mt-2"><div class="progress-bar" ></div></div>
+                </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">Responsive Web Design</h6>
+                    <div class="progress mt-2"><div class="progress-bar"></div></div>
+                </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">Website Layout Design</h6>
+                    <div class="progress mt-2"><div class="progress-bar" ></div></div>
+                </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">Website Optimization</h6>
+                    <div class="progress mt-2"><div class="progress-bar" ></div></div>
+                </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">SEO</h6>
+                    <div class="progress mt-2"><div class="progress-bar" ></div></div>
+                </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card card-dark p-3">
+                    <h6 class="text-white">WordPress</h6>
+                    <div class="progress mt-2"><div class="progress-bar" ></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<!-- <section class="section-padding" id="project">
+    <div class="container text-center">
+        <h2 class="fw-bold">My <span class="text-orange">Projects</span></h2>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card card-dark p-3">
+                    <img src="assets/img/work.jpg" class="service-img mb-3">
+                    <h5 class="text-white">UI / UX Design</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-dark p-3">
+                    <img src="assets/img/work.jpg" class="service-img mb-3">
+                    <h5 class="text-white">Web Design</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-dark p-3">
+                    <img src="assets/img/work.jpg" class="service-img mb-3">
+                    <h5 class="text-white">Web Development</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+
+
+<section class="py-5" id="qualification">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 animate__animated animate__fadeInUp">Here's My <span class="text-orange">Qualifications</span></h2>
+
+    <div class="row">
+      
+      <!-- Education Column -->
+      <div class="col-md-6">
+        <h4 class="fw-bold mb-4 animate__animated animate__fadeInUp">Education</h4>
+
+        <div class="timeline">
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h6 class="fw-bold m-3">Master of Computer Science (MCS)</h6>
+            <small>K.K. WAGH ACS AND CS COLLEGE NASHIK | 2022 – 2024</small>
+            <p>CGPA: 8.60</p>
+            <p>GRADE: A+</p>
+          </div>
+
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h6 class="fw-bold m-3">Bachelor of Computer Science (BCS)</h6>
+            <small>K.A.A.N.M. SONAWANE ARTS, SCIENCE AND COMMERCE COLLEGE, SATANA. | 2019 – 2022</small>
+            <p>CGPA: 8.79</p>
+            <p>GRADE: A+</p>
+          </div>    
+        </div>
+      </div>
+
+      <!-- Experience Column -->
+      <div class="col-md-6">
+        <h4 class="fw-bold mb-4 animate__animated animate__fadeInUp">Experience</h4>
+
+        <div class="timeline">
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h6 class="fw-bold m-3">Web Designer</h6>
+            <small>Upturn India Technologies | 2024 – Present</small>
+            <p>I have 1.6 years of professional experience as a Web Designer. During my role, I collaborated with developers, designed wireframes, improved website visuals, and ensured mobile optimization.</p>
+          </div>
+
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h6 class="fw-bold m-3">Web Designer</h6>
+            <small>Upturn India Technologies | Dec 2023 – May 2024</small>
+            <p>I have 6 months of internship experience in Web Designer. My internship helped me build strong fundamentals in UI/UX principles, layout design, and real-world project execution using tools like HTML, CSS, and Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="text-light pt-5 pb-3" id="contact">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <h5><span class="text-orange">Gauravi Bagul</span></h5>
+                <p>Web designer with 1+ year of experience creating responsive, engaging, and visually appealing websites.</p>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <h6>Contact Me</h6>
+                <p><a href="tel:+91 8459372848" class="text-decoration-none text-white">+91 8459372848</a></p>
+                <p><a href="mailto:bagulgauravi2001@gmail.com" class="text-decoration-none text-white">bagulgauravi2001@gmail.com</a></p>
+                <h6>Address</h6>
+               <p>At Post, Kharde. Tal: Deola Dist: Nashik</p>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <h6>Linkedin Details</h6>
+               <p><a href="https://www.linkedin.com/in/gauravi-bagul-1b3461288" target="_blank" class="text-decoration-none text-white">https://www.linkedin.com/in/gauravi-bagul-1b3461288</a></p>
+
+               <a class="btn btn-orange mt-3" href="assets/img/Gauravi_Resume.pdf" download >Download Resume</a>
+            </div>
+        </div>
+        <hr class="my-4 text-secondary">
+        <div class="text-center">© 2026 | All Rights Reserved.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navItems = document.querySelectorAll(".nav-item");
+    const sections = [];
+
+    // Get sections from link hrefs automatically
+    navItems.forEach(item => {
+        const link = item.querySelector(".nav-link");
+        if (link && link.getAttribute("href").startsWith("#")) {
+            const section = document.querySelector(link.getAttribute("href"));
+            if (section) sections.push(section);
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let id = entry.target.getAttribute("id");
+
+                navItems.forEach(item => {
+                    item.classList.remove("active");
+                    const link = item.querySelector(".nav-link");
+                    if (link && link.getAttribute("href") === "#" + id) {
+                        item.classList.add("active");
+                    }
+                });
+            }
+        });
+    }, {
+        threshold: 0.6
+    });
+
+    sections.forEach(section => observer.observe(section));
+
+});
+</script>
+
+</body>
+</html>
